@@ -49,7 +49,7 @@ func createOrder(s *discordgo.Session, m *discordgo.MessageCreate) {
 			fmt.Printf("Error deleting message\n")
 			return
 		}
-		s.ChannelMessageSend(m.ChannelID, "https://media1.tenor.com/images/c35501486a4d7bafc2317626f6bd6e92/tenor.gif?itemid=12336894")
+		s.ChannelMessageSend(m.ChannelID, "https://media.tenor.com/images/a074d3d12d981c5876d4f08daddf9b5a/tenor.gif")
 	}
 
 }
