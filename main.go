@@ -44,5 +44,12 @@ func createOrder(s *discordgo.Session, m *discordgo.MessageCreate) {
 			return
 		}
 		s.ChannelMessageSend(m.ChannelID, "https://media1.tenor.com/images/baf2d324d696b8e0b08daa8cff5c8f12/tenor.gif?itemid=12992329")
+	} else if m.Content == "!uiuiui" {
+		if err := s.ChannelMessageDelete(m.ChannelID, m.ID); err != nil {
+			fmt.Printf("Error deleting message\n")
+			return
+		}
+		s.ChannelMessageSend(m.ChannelID, "https://media1.tenor.com/images/c35501486a4d7bafc2317626f6bd6e92/tenor.gif?itemid=12336894")
 	}
+
 }
